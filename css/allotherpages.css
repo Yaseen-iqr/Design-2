@@ -1,0 +1,89 @@
+body{
+  overflow: auto;
+}
+
+.breadcrumb {
+  margin-top: 30px;
+
+}
+
+.about-us p{
+letter-spacing: 2px;
+padding: 10px;
+text-align: center;
+font-size: 18px;
+}
+
+.about-us h1{
+  font-family: 'Abril Fatface', cursive;
+}
+
+
+.about-feature{
+margin-top: 40px;
+padding: 10px;
+margin-bottom: 20px;
+-webkit-transition-duration:0.5s ;
+-moz-transition-duration:0.5s ;
+-o-transition-duration:0.5s ;
+transition-duration:0.5s ;
+}
+
+.about-feature .hvr-float-shadow:hover{
+  color: rgb(0, 162, 255);
+  }
+
+.about-feature p{
+text-align: center;
+font-size: 19px;
+font-weight: bold;
+letter-spacing: 2px;
+font-family: 'Indie Flower', cursive;
+}
+
+  .about-feature i{
+    margin-bottom: 20px;
+    -webkit-transition-duration:0.5s ;
+-moz-transition-duration:0.5s ;
+-o-transition-duration:0.5s ;
+transition-duration:0.5s ;
+  }
+
+/* ***********************about-seo ******************  */
+.about-seo{
+  padding-top: 40px;
+  padding-bottom: 40px;
+padding-left:10px ;
+margin-top: 40px;
+background: rgb(228, 228, 228);
+  }
+
+  .about-seo p{  line-height: 40px;
+
+  }
+
+  .about-seo h2{
+    margin-top: 20%
+  }
+
+  .about-seo .btn-primary {
+   width: 100%;
+}
+
+
+.faq h1 ~ hr
+{
+height: 3px;
+
+}
+
+
+.faq-question .row{
+margin-bottom: 20px;
+
+}
+
+.faq-question{
+  padding-bottom: 40px;
+  padding-top: 40px;
+}

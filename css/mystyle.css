@@ -1,0 +1,842 @@
+/*********important tip************* must use just one h1 in page**/
+
+body{
+padding-top: 55px;
+overflow: hidden;
+}
+
+/*  **************** use google font **************************/
+h1,h2,h3,h4,h5{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+
+/*  **************** option-box color **************************/
+.option-box{
+margin-left: 5px;
+position: fixed;
+top: 100px;
+left: 0px;
+z-index: 9999;  /*  mean the layer number wghict apear over another layer it tajke teight number with can br taked*/
+}
+
+
+.option-box .color-option{
+    border-radius: 10%;
+    float: left;
+    padding: 0 5px;
+    padding-top: 15px;
+display: none;
+}
+
+.option-box i {
+    margin: 30px 5px;
+    border-radius: 20%;
+ padding: 5px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.option-box i:hover {
+      opacity: 1;
+
+}
+
+
+.option-box .color-option ul li{
+    opacity: 0.7;
+    width: 20px;
+    height: 20px;
+ 
+    display: inline-block;
+    margin-left: 3px;
+-webkit-transition-duration:0.5s ;
+-moz-transition-duration:0.5s ;
+-o-transition-duration:0.5s ;
+transition-duration:0.5s ;
+}
+
+.option-box .color-option ul li:hover{
+    opacity: 1;
+ 
+}
+
+
+/*  *********************************************************************   menu list  */
+
+
+
+
+.navbar-light .navbar-nav .nav-link {
+     
+     font-size: 18px;
+}
+
+
+.navbar-light .navbar-brand {
+  
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size:25px;
+}
+
+.dropdown-menu 
+{
+
+width: 200px;
+}
+
+
+a.dropdown-item {
+    
+    -webkit-transition: padding 0.5s ease;
+    -moz-transition: padding 0.5s ease;
+    -o-transition: padding 0.5s ease;
+    transition: padding 0.5s ease;
+   
+}
+ 
+/* easy padding to left*/ 
+a.dropdown-item:hover {
+
+    padding-left:30px;
+    -webkit-transition: padding 0.5s ease;
+    -moz-transition: padding 0.5s ease;
+    -o-transition: padding 0.5s ease;
+    transition: padding 0.5s ease;
+   
+}
+
+
+/*  *********************************************************************         carousel  */
+.carousel-caption {
+    background-color: rgba(43, 41, 41, 0.5);
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    font-size: 22px;;
+  margin-bottom: 22%;
+  
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    cursor: pointer;
+   
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+ 
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 45%;
+    list-style: none;
+}
+
+
+.carousel-indicators .carousel-item img  {
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  from {filter:grayscale(0%);}
+  to {filter:grayscale(100%);}
+}
+
+
+/*  ****************************************  ***********************       About  */
+
+.about{
+    padding:60px;
+}
+
+
+/*  **************************************** *****************        features  */
+
+.features{
+    padding: 60px;;
+   
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.features .container img{
+margin-bottom: 10px;
+transition: 0.6s;
+filter: grayscale(100%);
+}
+
+
+.container img:hover{
+    opacity:0.7;
+      transition: 0.6s;
+      filter: grayscale(0%);
+}
+
+
+.container h1{
+    margin-bottom: 20px;
+    }
+
+    .container p{
+      text-align: justify;
+        }
+
+
+ /*  ************************************************************************         Testemonials  */
+ .Testemonials h1{padding-top: 20px;}
+
+.Testemonials p{
+    line-height: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+        }
+
+
+        .Testemonials span{
+font-size: 18px;
+font-weight: bold;
+
+        }
+
+
+        .Testemonials .carousel-indicators {
+            position: static;
+            margin-top: 0.5rem;
+          margin-left: 15%;
+            list-style: none;
+        }        
+
+        
+        .Testemonials .carousel-indicators img {
+          width: 30%;
+          height:30%;
+          border-radius: 15px;
+          filter: grayscale(100%);
+        } 
+          
+        .Testemonials .carousel-indicators img:hover {
+            filter: grayscale(0%);
+          }   
+
+ .Testemonials .carousel-indicators .active {
+    filter: grayscale(0%);
+        }   
+
+
+        .Testemonials .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    cursor: pointer;
+    
+}
+
+.Testemonials  .carousel-indicators .active {
+    opacity: 1;
+  
+}
+
+
+/*  *************************************************************************  not used*****  */
+
+.glow {
+
+   
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4d4b6b, 0 0 40px #4b44af, 0 0 50px #2926d1, 0 0 60px #120eff, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #92bd81, 0 0 40px #4dc261, 0 0 50px #29a072, 0 0 60px #12a84c, 0 0 70px #08ec54, 0 0 80px #ff4da6;
+    }
+  }
+
+
+  /*  ************************************************************************  price*****  */
+  .Price
+  {
+   
+      padding-bottom: 40px;
+      padding-top: 30px;
+  }
+.Price .pricebox
+{
+   
+padding: 10px;
+margin-bottom: 5px;
+}
+
+
+.Price .pricebox p
+{
+ margin-left: 30%;
+ max-width: 100px;
+ max-height: 100px;
+ 
+    border-radius: 50%;
+    line-height: 100px;
+ 
+font-size: 30px;
+font-weight: bold;
+
+-webkit-transition-duration:0.7s ;
+-moz-transition-duration:0.7s ;
+-o-transition-duration:0.7s ;
+transition-duration:0.7s ;
+}
+
+
+.Price .pricebox p:hover
+{
+   
+    transform: scale(1.3,1.3);
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg); 
+      transform:rotate(360deg);
+}
+
+.Price .pricebox ul{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+  /*  **************************************************************  ourTeam  *****  */
+.ourTeam{
+    background:url(../img/b.webp) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    width: 100%;
+    min-height:500px;
+
+}
+
+.ourTeam h1{
+    padding-top: 20px;
+  
+}
+
+.fillbackground{
+  
+  
+    min-height:500px;
+  
+    padding-bottom: 30px;    
+}
+
+
+.ourTeam  .person {
+margin-top: 80px;
+}
+.ourTeam  .person img {
+ border-radius: 50%;
+   width: 80%;
+    }
+    .ourTeam  .person h4{
+        font-family:fantasy;
+        margin-top: 10px;  
+    }
+
+    .ourTeam  .person p{
+        text-align:center;
+    }
+
+ /*  ****************************************************************  subcsribe  *****  */
+
+    .subcsribe{
+        text-align: center;
+       
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+
+    .subcsribe  button
+    {
+        margin-top: 10px;
+    }
+
+
+ .subcsribe   .form-control {
+        display: block;
+        width: 70%;
+        float: left;
+    }
+  
+
+    .subcsribe button {
+        margin-top: 0;
+    }
+    
+
+    /*  *************************************************************  statistic  *****  */
+.statistic{
+    background:url(../img/zz.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    width: 100%;
+   height:100%;
+  
+}
+
+.statistic h1{
+   padding-top: 50px;
+   margin-bottom: 30px;
+}
+
+.statistic .filledcolor2{
+ 
+    min-height:300px;
+    padding-bottom: 20px;
+}
+
+.statistic p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+.statistic span{
+ 
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.statistic .stare{ 
+-webkit-transition-duration:0.7s ;
+-moz-transition-duration:0.7s ;
+-o-transition-duration:0.7s ;
+transition-duration:0.7s ;
+}
+
+
+
+ /*  **********************************************************************  skill  *****  */
+.skill{
+ 
+    padding-bottom: 20px;
+}
+
+.skill h1{
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+.skill .progress
+{
+    height: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:cursive;
+    text-align: left;
+}
+
+.info h3{
+   font-weight: bold; 
+}
+
+
+/*  ************************************************************************  contact  *****  */
+.contact{
+    background:url(../img/aa.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    width: 100%;
+    min-height: 500px;
+   height:100%;
+  
+}
+
+.contact .contactform{
+    padding-top: 40px;;
+ 
+    padding-bottom: 20px;
+    min-height: 500px;
+   
+}
+
+
+
+.inputwidth{
+    width: 50%;
+}
+
+.form  .input-group{
+text-align: center;
+}
+  
+.contact textarea
+{
+    height: 90px;
+   
+}
+
+
+.contact .btn-primary {
+    width: 100%;
+}
+
+/*  ************************************************************************  Client  *****  */
+.Client{
+    padding-top: 30px;
+  
+    padding-bottom: 20px;
+}
+
+.Client img{
+
+    width: 90px;
+    height: 50px;
+opacity: 0.5;
+margin: 10px;
+-webkit-transition-duration:0.7s ;
+-moz-transition-duration:0.7s ;
+-o-transition-duration:0.7s ;
+transition-duration:0.7s ;
+}
+
+.Client img:hover{
+opacity: 1;
+}
+
+.Client ul li{
+   float: left; 
+}
+
+
+
+.moving {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+.moving:hover {
+  animation-play-state: paused;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 1200px;}
+}
+
+
+
+
+
+/*  *****************************************************************  footer  *****  */
+.footer{
+padding-top: 40px;
+}
+
+.footer a{
+    -webkit-transition-duration:0.5s ;
+-moz-transition-duration:0.5s ;
+-o-transition-duration:0.5s ;
+transition-duration:0.5s ;
+}
+
+
+.footer h3{
+  
+    letter-spacing: 2px;
+}
+
+.footer .newstyle li{
+width: 33.3333%;
+float: left;
+padding: 2px;
+}
+
+.footer .socaialstyle li{
+    margin-top: 10px;
+    float: left;
+    padding: 10px;
+
+    -webkit-transition-duration:0.5s ;
+    -moz-transition-duration:0.5s ;
+    -o-transition-duration:0.5s ;
+    transition-duration:0.5s ;
+    }
+
+
+    
+.footer .socaialstyle li .fa-facebook{
+    border-radius: 50%;
+    -webkit-transition-duration:0.5s ;
+    -moz-transition-duration:0.5s ;
+    -o-transition-duration:0.5s ;
+    transition-duration:0.5s ;
+    }
+    
+
+    .footer .socaialstyle li .fa-facebook:hover{
+    
+      color: rgb(0, 97, 224);
+      border-radius: 50%;
+      background-color: white;
+        }    
+
+
+           
+.footer .socaialstyle li .fa-telegram{
+    border-radius: 50%;
+    -webkit-transition-duration:0.5s ;
+    -moz-transition-duration:0.5s ;
+    -o-transition-duration:0.5s ;
+    transition-duration:0.5s ;
+    }
+    
+
+    .footer .socaialstyle li .fa-telegram:hover{
+  
+      color: rgb(47, 137, 255);
+        background-color: white;
+      border-radius: 50%;
+        }    
+  
+.footer .socaialstyle li .fa-linkedin-in{
+ 
+    -webkit-transition-duration:0.5s ;
+    -moz-transition-duration:0.5s ;
+    -o-transition-duration:0.5s ;
+    transition-duration:0.5s ;
+    }
+    
+     
+.footer .socaialstyle li .fa-linkedin-in:hover{
+ 
+  border-radius: 50%;
+  color: rgb(34, 130, 255);
+  }
+  
+  
+           
+.footer .socaialstyle li .fa-viber{
+  
+    -webkit-transition-duration:0.5s ;
+    -moz-transition-duration:0.5s ;
+    -o-transition-duration:0.5s ;
+    transition-duration:0.5s ;
+    }
+    
+
+    .footer .socaialstyle li .fa-viber:hover{
+      color: rgb(153, 75, 255);
+  
+
+        }    
+
+.footer .socaialstyle li .fa-youtube{
+  
+    -webkit-transition-duration:0.5s ;
+    -moz-transition-duration:0.5s ;
+    -o-transition-duration:0.5s ;
+    transition-duration:0.5s ;
+    }
+    
+
+    .footer .socaialstyle li .fa-youtube:hover{
+      color: rgb(255, 41, 41);
+        }    
+
+              
+           
+.footer .socaialstyle li .fa-envelope{
+  
+    -webkit-transition-duration:0.5s ;
+    -moz-transition-duration:0.5s ;
+    -o-transition-duration:0.5s ;
+    transition-duration:0.5s ;
+    }
+    
+
+    .footer .socaialstyle li .fa-envelope:hover{
+      color: rgb(0, 255, 234);
+        }    
+
+        .footer   .part2{
+padding-top: 10px;
+        }
+      
+    .footer  .d-flex  .imagesize img{
+width: 100px;
+height: 100px;
+    }
+
+    
+
+    .footer .d-flex{
+margin-bottom: 8px;
+    }   
+
+    .footer .imageworksize img{
+        margin: 2px;
+width: 160px;
+height: 110px;
+    }
+
+  
+
+    .footer   .copyright{
+        font-size: 18px;
+        margin-top: 10px;
+
+margin-top: 20px;
+padding: 10px;
+    }
+
+   
+
+/*  ***********************************  Loading  *****  */
+
+    .overlay{
+position: fixed;
+background: #222;
+left:0;
+top:0;
+width: 100%;
+height: 100%;
+z-index: 9999;
+    }
+ .overlay   .loader{
+margin-top: 30%;
+    }
+/************Spinner*************************************/
+.loader {
+    color: #396eff;
+    font-size: 90px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin: 72px auto;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load6 1s infinite  ease, round 1s infinite  ease;
+    animation: load6 3s infinite ease, round 3s infinite  ease;
+  }
+  @-webkit-keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @-webkit-keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
+/****************************scroll up****************************/
+#scroll-up{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+padding: 5px;
+color: #DDD;
+background: rgb(63, 63, 63);
+text-align: center;
+opacity: 0.7;
+cursor: pointer;
+display: none;
+}
+
+#scroll-up:hover{
+    opacity: 1;
+}
+
+
+

@@ -1,0 +1,185 @@
+/*  **************** option-box color **************************/
+.option-box .color-option{
+border: 2px solid red;
+}
+
+.option-box i {
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+}
+
+.option-box .color-option ul li:hover{
+  border: 2px solid white;
+}
+
+
+/*  *********************************************************************   menu list  */
+.nanvbar .form-control:focus{
+    background-color: rgb(126, 183, 206);
+    color: white;
+    }
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active,.option-box .color-option ul li {
+    background-color: rgb(255, 0, 0);
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover,.option-box i:hover {
+color: rgb(10, 168, 216);
+}
+
+
+.navbar-light .navbar-brand ,a.dropdown-item {
+    color: rgba(233, 70, 5, 0.9);
+   
+}
+ 
+/* easy padding to left*/ 
+a.dropdown-item:hover {
+    background-color: tomato;
+    color: yellow;
+}
+
+
+/*  *********************************************************************         carousel  */
+.carousel-caption {
+    background-color: rgba(43, 41, 41, 0.5);
+    color: rgb(250, 173, 7);
+}
+
+
+.carousel-indicators [data-bs-target] , .subcsribe   .form-control:focus{
+  
+    background-color: #ebea12;
+}
+
+.carousel-indicators .active {
+    background-color: #12eb74;
+}
+ /*  ************************************************************************         Testemonials  */
+
+        .Testemonials span,.about h1 span{
+color: tomato;
+        }
+.Testemonials .carousel-indicators [data-bs-target] {
+    background-color: #474343;
+}
+.Testemonials  .carousel-indicators .active {
+    background-color: #ff0000;
+}
+  /*  ************************************************************************  price*****  */
+  .Price,.Price .pricebox p,.features,.btn-outline-success 
+  {
+      background-color: #dfdfdf;
+  }
+
+.Price .pricebox
+{
+    background-color: white;
+border: 2px solid #DDD;
+}
+
+
+.Price .pricebox p:hover
+{
+    background-color: rgb(0, 0, 0);
+    color: red;
+}
+
+
+  /*  **************************************************************  ourTeam  *****  */
+
+
+.ourTeam h1,.footer a,.yaseen-color,.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+
+
+
+ /*  ****************************************************************  subcsribe  *****  */
+
+    .subcsribe{ 
+        background: rgb(197, 197, 197);
+    }
+
+
+    /*  *************************************************************  statistic  *****  */
+
+
+.statistic .filledcolor2,.contact .contactform,.fillbackground,.dropdown-menu {
+    background: rgba(0, 0, 0, 0.3);
+    color: white; 
+}
+ 
+
+
+.statistic .stare:hover
+{
+color: rgb(245, 147, 0);
+}
+
+ /*  **********************************************************************  skill  *****  */
+.skill,.contact textarea,.Client, .color-option{
+    background-color: rgb(206, 206, 206);
+}
+
+
+/*  ************************************************************************  contact  *****  */
+
+.contact .form-control:focus{
+background-color: rgb(93, 158, 184);
+color: white;
+}
+
+/*  *****************************************************************  footer  *****  */
+.footer{
+background-color: rgb(26, 26, 26);
+color: white;
+}
+
+.footer .newstyle a:hover,.footer h3, .footer   .copyright span,.footer .socaialstyle li .fa-envelope:hover{
+    color: rgb(0, 209, 236);
+}
+    
+    .footer  .d-flex h6{
+        color: rgb(136, 191, 255);
+    }
+
+
+    .footer .img-thumbnail{
+        background: #727272;
+        border: 1px solid #444;
+    }
+
+    .footer   .copyright{ 
+background: #333;
+color: #aaa;
+    }
+
+    
+    .footer .socaialstyle li .fa-youtube:hover{
+        color: rgb(255, 41, 41);
+
+          }   
+
+    .footer .socaialstyle li .fa-facebook:hover{
+        color: rgb(0, 97, 224);
+      border-radius: 50%;
+      background-color: white;
+        }    
+
+
+       
+    .footer .socaialstyle li .fa-telegram:hover{
+        color: rgb(47, 137, 255);
+        background-color: white;
+      border-radius: 50%;
+        }    
+  
+.footer .socaialstyle li .fa-linkedin-in:hover{
+ 
+    border-radius: 50%;
+    color: rgb(34, 130, 255);
+    }
+    
